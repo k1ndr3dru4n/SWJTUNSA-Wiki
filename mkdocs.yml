@@ -1,0 +1,46 @@
+site_name: SWJTUNSA-Wiki
+repo_url: https://github.com/k1ndr3dru4n/SWJTUNSA-Wiki
+repo_name: SWJTUNSA-Wiki
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light-blue
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black 
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+
+plugins:
+  - search
+
+nav:
+  - 主页: index.md
+  - 关于网安协会:
+    - 简介: about/introduction.md
+    - 组成:
+      - 部门: organize/departments.md
+      - 群聊: organize/groups.md
+    - 活动:
+      - 线下培训: activities/training.md
+      - CTF新秀杯: activities/rookie.md
+      - 省赛: activities/shengsai.md
+  - 资料: 
+    - 相关链接: resources/links.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
